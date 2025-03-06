@@ -11,6 +11,27 @@ body {
 nav {
     background-color: white;
     padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#destinations {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    padding: 5px;
+    margin-right: 5px;
+}
+#destinations > p {
+    padding: 5px;
+}
+
+#actions {
+    display: flex;
+    align-items: center;
+}
+#actions > p, button {
+    padding: 5px;
 }
 
 p {
