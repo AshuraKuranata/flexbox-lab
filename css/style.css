@@ -25,7 +25,6 @@ nav {
 #destinations > p {
     padding: 5px;
 }
-
 #actions {
     display: flex;
     align-items: center;
@@ -43,6 +42,10 @@ section {
     background-color: black;
     color: white;
     padding: 24px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 h1,
@@ -72,6 +75,10 @@ input {
 main {
     background-color: white;
     padding: 32px 72px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 nav button {
@@ -99,6 +106,8 @@ nav button {
 }
 
 #subnav {
+    display: flex;
+    justify-content: space-between;
     padding: 32px 72px 0;
     background-color: white;
 }
@@ -115,4 +124,10 @@ nav button {
     color: black;
     border-radius: 50px;
     padding: 6px 15px;
-}  
+}
+
+#trending {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

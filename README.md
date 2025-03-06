@@ -23,7 +23,7 @@ After taking a look at the <a href="https://pages.git.generalassemb.ly/modular-c
 The recommended approach to dealing with the web site and lab are to break it down into 4 distinct sections:
 
 * Top Nav
-* The Hero Content
+* The Search "Hero" bucket
 * Sub-Nav
 * Main Content
 
@@ -42,5 +42,18 @@ Once this was handled, the rest of the nav bar exercise of spacing was quickly r
 [^1]: I'd like to research later into how to individually move child flex items within a parent container because I think it should work, and with the use case of the possibility that there might be multiple containers that you want to stack at the ends in different iterations
 i.e. |12     345|
 
-## User Story 2: I want the Hero section to have the text elements better spaced out, the search to be prominently displayed inthe middle, and for the trending items to be listed below the search all within rows.
+## User Story 2, 3, 4
 
+After solving and getting that huge breakthrough on user story 1, the remaining user stories for the Search Bar section, Sub Nav, and Main content of the web page.
+
+For the Hero Content section, I made the section to display as flex and shifted the flex-direction to column so the child items would follow the main axis top-to-bottom.  After doing so, I justified the content to have space around so each item is separated from one another evenly and aligned the items to the center.
+
+From there, the "Trending Searches" content buttons were stil stacked in a column, so I created a new style targeting id '#trending' and also changed it to flexbox, which made it end up in rows and followed the rest of the logic.  The text for trending searches was off center, so I aligned the div centrally to be in alignment with the rest of the content.
+
+The sub nav buttons were the same concept as the nav bar to move, so I just flexboxed and justified the content to space-between to push them to the edges of the screen.
+
+The final main section took a little to understand the issue, but the key was that I needed to make sure all the child items wrapped onto page given their size, that they were centered because of the parent container's location, and then make spacing between each of the cards, which was solved using the gap property to make space between the flex items.[^2]
+
+Once that was completed, I was successful in completing the exercise of emulating the final design.
+
+[^2]: I initially started off doing a class search for the cards and making a margin around the items, but the gap solution seems more useful and pertinent, vs margins sometimes having errors and issues.
